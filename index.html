@@ -30,6 +30,14 @@
                           <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#cronograma">
                            Cronograma</button>
                         </li>
+                        <li class="nav-item navbar-right ms-5">
+                          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#requisitos">
+                           Requisitos Funcionales</button>
+                        </li>
+                        <li class="nav-item navbar-right ms-5">
+                          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#requisitosnf">
+                           Requisitos no Funcionales</button>
+                        </li>
                     </ul>
                   </div>
               </nav>
@@ -192,7 +200,405 @@
         </div>
       </div>
     </div>
+    
+    <div class="modal fade" id="requisitos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Resultados Funcionales</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+             <div class="row">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nombre Apartado</th>
+                    <th scope="col">Requisito</th>
+                    <th scope="col">Prioridad</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">RF01</th>
+                    <td>inicioSesion.html</td>
+                    <td>El sistema permite ingresar el usuario y la contraseña </td>
+                    <td>Alta</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">RF02</th>
+                    <td> inicioSesion.html</td>
+                    <td>El sistema comprueba las credenciales de acceso por medio del botón “Ingresar”</td>
+                    <td>Alta</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">RF02.1</th>
+                    <td> inicioSesion.html</td>
+                    <td>En caso de que las credenciales coincidan con un perfil, el sistema permitirá ir a inicio.html</td>
+                    <td>Alta</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">RF02.2</th>
+                    <td> inicioSesion.html</td>
+                    <td>En caso de que las credenciales no coincida  con un perfil, el sistema se va a redirigir a registro.html y lanzará un mensaje de error: “Credenciales de acceso incorrectas” </td>
+                    <td>Alta</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">RF03</th>
+                    <td> inicioSesion.html</td>
+                    <td>Al oprimir el botón “registrar”, la página se redirigirá a registro.html  </td>
+                    <td>Alta</td>
+                   </tr>
+                  <tr>
+                     <th scope="row">RF04</th>
+                     <td> inicioSesion.html</td>
+                     <td>El sistema permitirá la recuperación de la cuenta, al oprimir la opción” He olvidado mi cuenta”, lo llevara a la página de recuperarmicuenta.html </td>
+                     <td>Alta</td>
+                  </tr>
+                  
+                   <tr>
+                    <th scope="row">RF05</th>
+                    <td> registro.html</td>
+                    <td>El sistema permite ingresar información del usuario, para el registro.  </td>
+                    <td>Alta</td>
+                   </tr>
+                  <tr>
+                    <th scope="row">RF06</th>
+                    <td> registro.html</td>
+                    <td>El sistema comprueba las credenciales de acceso mediante el botón de “finalizar” </td>
+                    <td>Alta</td>
+                    </tr>
+                    <tr>
+                     <th scope="row">RF06.1</th>
+                     <td>registro.html</td>
+                     <td>En caso que las credenciales ya este registrada, lo llevara a la página de  recuperarmicuenta.html </td>
+                     <td>Media</td>
+                    </tr> 
+                     <tr>
+                      <th scope="row">RF06.2</th>
+                      <td> registro.html</td>
+                      <td>En caso que el usuario sea menor de edad, no se podrá registrar y lanzara un mensaje “la persona es menor de edad” </td>
+                      <td>Alta</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF06.3</th>
+                      <td> registro.html</td>
+                      <td>En caso que si sea mayor de edad, el sistema permitirá el registro y lanzara un mensaje “ registro exitoso” </td>
+                      <td>Alta</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF07</th>
+                      <td> registro.html</td>
+                      <td>Al oprimir el botón de finalizar, lo llevara a la página Index.html.  Además llevara las credenciales a una base de dato </td>
+                      <td>Alta</td>
+                    </tr>
+                   
+                    <tr>
+                      <th scope="row">RF08</th>
+                      <td> registro.html </td>
+                      <td>El sistema permitirá ingresar información para la recuperación de cuenta </td>
+                      <td>Alta </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF09</th>
+                      <td> registro.html y Recuerparmicuenta.html</td>
+                      <td>Al sistema comprueba la información por medio del botón finalizar</td>
+                      <td>Alta</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF09.1</th>
+                      <td>recuerparmicuenta.html</td>
+                      <td>En caso si las credenciales  sea válida lanzara un mensaje “ la información ingresada es válida” y el sistema lo lleva a la página Index.html </td>
+                      <td>Media</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF09.2</th>
+                      <td>recuerparmicuenta.html</td>
+                      <td>En caso que las credenciales no sea validas lanzara un mensaje “ la información es incorrecta” </td>
+                      <td>media</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF10</th>
+                      <td>index.html</td>
+                      <td>El sistema mostrara un menú de navegación lateral que contendrá unas ítems  desplegables  </td>
+                      <td>Alta </td>
+                    </tr>
+                    
+                    <tr>
+                      <th scope="row">RF10.1</th>
+                      <td>index.html </td>
+                      <td>El sistema mostrara la opción de inventario dentro del menú de navegación lateral </td>
+                      <td>media</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF10.1.1</th>
+                      <td>index.html </td>
+                      <td>Al oprimir la opción de inventario, desglosará  un desplegable  con la opción:“ todos los productos disponibles ” </td>
+                      <td>media </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF10.1.1.1</th>
+                      <td>productosDisponibles.html</td>
+                      <td>Se mostrará una tabla dinámica dónde aparecerá el nombre del producto, cantidad y fecha de vencimiento </td>
+                      <td>media </td>
+                    </tr>
+                   
+                    <tr>
+                      <th scope="row">RF10.1.1.2</th>
+                      <td>productosDisponibles</td>
+                      <td>Al oprimir el botón “Volver”, redirigirá hacía la página index.html   </td>
+                      <td>Baja</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF10.2</th>
+                      <td>index.html </td>
+                      <td>El sistema mostrara la opción de producto dentro del menú de navegación lateral  </td>
+                      <td>media</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF10.2.1</th>
+                      <td>index.html</td>
+                      <td>Al oprimir la opción de producto, desglosará un desplegable con las opciones: “Registrar” y “Modificar”</td>
+                      <td>media</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF10.2.1.1</th>
+                      <td>index.html</td>
+                      <td>Al oprimir la opción registrar dentro del desglosamiento de “Producto”, redirigirá la página hacía registrarProducto.html</td>
+                      <td>media</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF10.2.1.2</th>
+                      <td>index.html</td>
+                      <td>Al oprimir la opción modificar dentro del desglosamiento de “Producto”, redirigirá la página hacía modificarProducto.html</td>
+                      <td>media</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF10.2.1.1.1</th>
+                      <td>registrarProducto.html</td>
+                      <td>El sistema mostrará un formulario de registro de productos  </td>
+                      <td>media</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF10.2.1.1.2</th>
+                      <td>registrarProducto.html</td>
+                      <td>Al oprimir el botón “Registrar”, se enviará el registro del producto a la base de datos</td>
+                      <td>Alta</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF10.2.1.1.3</th>
+                      <td>registrarProducto.html</td>
+                      <td>Al oprimir el botón “Inicio” redirigirá a la página index.html </td>
+                      <td>baja</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF10.2.1.2.1 </th>
+                      <td>modificarProducto.html</td>
+                      <td>El sistema mostrará una tabla dinámica que contendrá cada producto que vende la tienda y dos botones: “Modificar” y “Eliminar”</td>
+                      <td>Alta</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF10.2.1.2.2</th>
+                      <td>modificarProducto.html</td>
+                      <td>El botón modificar permitirá editar la información del producto en la interfaz y la base de datos</td>
+                      <td>Media</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF10.2.1.2.3</th>
+                      <td>modificarProducto.html</td>
+                      <td>El botón Eliminar permitirá eliminar el producto del registro y la base de datos</td>
+                      <td>Media</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF10.2.1.2.4</th>
+                      <td>modificarProducto.html</td>
+                      <td>Al oprimir el botón “Inicio” redirigirá a la página index.html</td>
+                      <td>Bajo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF10.3</th>
+                      <td>index.html</td>
+                      <td>El sistema mostrara la opción de finanza dentro del menú de navegación lateral</td>
+                      <td>Media</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF10.3.1</th>
+                      <td>index.html</td>
+                      <td>Al oprimir la opción de “Finanza”, desglosará un desplegable con las opciones: “Ganancias” y “Perdidas”</td>
+                      <td>Media</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF10.3.1.1</th>
+                      <td>index.html</td>
+                      <td>Al oprimir la opción “Ganancias” dentro del desglosamiento de “Finanza”, redirigirá la página ganancias.html</td>
+                      <td>Media</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF10.3.1.1.1</th>
+                      <td>ganancias.html</td>
+                      <td>El sistema mostrará una tabla dinámica que mostrará las ganancias obtenidas de cada producto traídas desde la base de datos </td>
+                      <td>Alta</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF10.3.1.1.2</th>
+                      <td>ganancias.html</td>
+                      <td>Al oprimir el botón “Inicio” redirigirá a la página index.html </td>
+                      <td>Bajas</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF10.3.1.2</th>
+                      <td>index.html</td>
+                      <td>Al oprimir la opción “Perdidas” dentro del desglosamiento de “Finanza”, redirigirá la página perdidas.html</td>
+                      <td>Media</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF10.3.1.2.1</th>
+                      <td>perdidas.html</td>
+                      <td>El sistema mostrará una tabla dinámica que mostrará las perdidas por productos </td>
+                      <td>Alta</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF10.3.1.2.2</th>
+                      <td>perdidas.html</td>
+                      <td>Al oprimir el botón “Inicio” redirigirá a la página index.html </td>
+                      <td>Baja</td>
+                    </tr>
+                    
+                    
+                    
+                   
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="modal fade" id="requisitosnf" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Requisitos no funcionales</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nombre Apartado</th>
+                    <th scope="col">Requisito</th>
+                    <th scope="col">Prioridad</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">RNF01</th>
+                    <td> inicioSesion.html</td>
+                    <td>El sistema mostrara un logo  </td>
+                    <td>Por defecto</td>
+                  </tr>
+                  <tr>
+                     <th scope="row">RNF02</th>
+                     <td> inicioSesion.html</td>
+                     <td>El sistema mostrara un fondo de color morado  </td>
+                     <td>Por defecto</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">RNF03</th>
+                    <td> registro.html y recuerparmicuenta.html</td>
+                    <td>El sistema mostrara un color morado en el banner </td>
+                    <td>Por defecto </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">RNF03.1</th>
+                    <td> registro.html y recuerparmicuenta.html</td>
+                    <td>El sistema mostrara un logo, en el banner de la pagina  </td>
+                    <td>Por defecto </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">RNF04</th>
+                    <td> registro.html y recuerparmicuenta.html</td>
+                    <td>El sistema mostrara un fondo de color blanco en el contenido principal </td>
+                    <td>Por defecto </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">RNF05</th>
+                    <td>Todas las paginas exceptuando inicioSesion.html, registro.html y recuperarcuenta.html </td>
+                    <td>El menú lateral será mostrado de color rojo</td>
+                    <td>Por defecto </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">RNF06</th>
+                    <td>index.html </td>
+                    <td>En el contenido de la página se mostrará un cuadro con la información de las últimas actualizaciones </td>
+                    <td>Por defecto </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">RNF08</th>
+                    <td>productosDisponibles</td>
+                    <td>El menú lateral tendrá la opción “Volver” </td>
+                    <td>por defecto</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">RNF09</th>
+                    <td>productosDisponibles</td>
+                    <td>El formulario del registro se verá remarcado con bordes de color rojo </td>
+                    <td>por defecto</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">RNF10</th>
+                    <td>registrarProducto.html</td>
+                    <td>El botón “Registrar” se mostrará de color verde </td>
+                    <td>Por defecto</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">RNF11</th>
+                    <td>modificarProducto.html</td>
+                    <td>La tabla dinámica se mostrará con bordes rojos</td>
+                    <td>Por defecto</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">RNF12</th>
+                    <td>modificarProducto.html</td>
+                    <td>El botón modificar se mostrará de color Verde</td>
+                    <td>Por defecto</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">RNF13</th>
+                    <td>modificarProducto.html</td>
+                    <td>El botón eliminar se mostrará de color rojo </td>
+                    <td>Por defecto</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">RNF14</th>
+                    <td>ganancias.html</td>
+                    <td>El sistema mostrará la tabla dinámica con bordes rojos  </td>
+                    <td>Por defecto</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">RNF15/th>
+                    <td>perdidas.html</td>
+                    <td>El sistema mostrará la tabla dinámica con bordes rojos  </td>
+                    <td>Por defecto</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
    
     <footer>
         <div class="text-center footer text-white" style="background-color: black;">
